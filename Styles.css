@@ -1,30 +1,43 @@
-body{
-    background-color: black;
-    color: white;
-    font-family: "Times New Roman";
+body {
+    background: black;
+    font-family:"Times New Roman";
 }
-.assignments{
+
+.assignments {
     display: flex;
     flex-wrap: wrap;
 }
-.assignment{
-    width: 30%;
-    display: flex;
-    background-color: midnightblue;
+
+.assignment {
+    width: 21%;
     padding: 10px;
     margin: 10px;
+    margin-bottom: 30px;
+    background: #1D2951;
     border-radius: 5px;
+    box-shadow: 5px 8px #588BAE;
+    color: white;
 }
-.assignment img{
+
+.assignment img {
     width: 200px;
-    margin: 10px;
-    border: 4px solid white;
+    border: 2px solid white;
+    margin-right: 20px;
+    border-radius: 5px;
     display: block;
     margin: auto;
 }
-h1{
+
+h1 {
+    color: palegreen;
     text-align: center;
 }
-a{
-    color: white;
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+.assignment a:hover {
+    color: red;
 }
