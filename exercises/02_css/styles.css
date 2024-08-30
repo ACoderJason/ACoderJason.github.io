@@ -1,21 +1,44 @@
 /* Structure */
 body {
-    background: violet;
+    background: #FFDDE3;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 div {
-    background: white;
+    background: #EDF0EE;
     padding: 5px;
     margin: 20px auto;
     width: 70%;
+    border-radius: 10px;
 }
 
+/* Navigation */
+#main-nav ul {
+    padding-left: 0; /* removes the left padding */
+    width: fit-content;
+    margin: auto;
+}
+#main-nav li {
+    list-style-type: none; /* No Bullets */
+    display: inline-block; /* appear on one line */
+}
+#main-nav a {
+    text-decoration: none; /* No Underline */
+    background: #FF8DA1;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 2px;
+}
+#main-nav a:hover {
+    background: black;
+    color: #4B6758;
+}
 /* Typography */
 h1 {
-    color:red;
+    color:#A0B87F;
 }
 
 p {
-    color:blue;
+    color:#CA8336;
 }
