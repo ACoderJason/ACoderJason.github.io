@@ -1,0 +1,139 @@
+/* Structure */
+:root {
+    --main-background-color: skyblue;
+    --gallery-back: aliceblue;
+    --primary-color: darkblue;
+    --secondary-color: skyblue;
+    --highlightcolor: pink;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#content {
+    background: white;
+}
+
+.columns-all {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+}
+/* Header */
+#main-header {
+    position: relative;
+}
+
+#main-img {
+    margin-right: 5px;
+}
+
+/* Gallery */
+#gallery section {
+    background: var(--gallery-back);
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Login Menu */
+#login-menu {
+    width: fit-content;
+    padding: 10px;
+    /*position: absolute;*/ /* Position relative to window */
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+#login-menu ul {
+    display: none;
+    padding-left: 0;
+}
+
+#login-menu li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+#login-menu a {
+    text-decoration: none;
+    color: violet;
+}
+
+#login-menu a:hover {
+    text-decoration: underline;
+}
+
+#ball {
+    width: 50px;
+    height: 50px;
+    background: magenta;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes bounce {
+    0% {
+        background: magenta;
+        top: 0px;
+    }
+    25% {
+        background: cyan;
+    }
+    50% {
+        background: yellow;
+        top: 100px;
+    }
+    75% {
+        background: blue;
+    }
+    100% {
+        background: green;
+        top: 0px;
+    }
+}
+
+/*
+Static
+-can't move
+Absolute
+-doesn't reserve the space in output
+-relative to the first non-static parent (or window)
+Relative
+-reserves the space in output
+-relative to where it originally appearss
+*/
+
+/* Larger Resolutions */
+
+@media only screen and (min-width: 600px) {
+    #content {
+        width: 70%;
+        margin: auto;
+    }
+    .columns {
+        display: flex;
+    }
+    #settings {
+        display: none;
+    }
+    #login-menu ul {
+        display: flex;
+    }
+    .one {
+        flex: 1;
+    }
+    #gallery {
+        flex-wrap: wrap;
+    }
+    #gallery section {
+        flex: 33%;
+    }
+}
